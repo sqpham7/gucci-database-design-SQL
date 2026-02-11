@@ -32,58 +32,56 @@ Stores
 
 Manufacturing Locations
 
-Columns: ManufacturingLocationID, Location, ProductManufactured
+- Columns: ManufacturingLocationID, Location, ProductManufactured
 
-Description: Tracks where products are manufactured
-
-Relationship: Many-to-Many (via associative table)
+- Description: Tracks where products are manufactured
+  
+- Relationship: Many-to-Many (via associative table)
 
 Product Details
 
-Columns: ProductID, ProductName, TextDescription
-
-Description: Descriptive information for products
+- Columns: ProductID, ProductName, TextDescription
+  
+- Description: Descriptive information for products
 
 Orders
 
-Columns: OrderID, OrderDate, CustomerNumber, QuantityOrdered, OrderStatus
+- Columns: OrderID, OrderDate, CustomerNumber, QuantityOrdered, OrderStatus
 
-Description: Captures customer purchase activity
-
-Relationships:
-
-Many-to-One (Customers)
-
-Many-to-Many (Products via Order Details)
+- Description: Captures customer purchase activity
+  
+- Relationships:
+  - Many-to-One (Customers)
+  - Many-to-Many (Products via Order Details)
 
 Order Details (Associative Table)
 
-Columns: OrderID, DateOfPurchase, DateOfDelivery
-
-Description: Links orders and products
-
-Relationship: Many-to-One with Orders and Products
+- Columns: OrderID, DateOfPurchase, DateOfDelivery
+  
+- Description: Links orders and products
+  
+- Relationship: Many-to-One with Orders and Products
 
 Product Lines
 
-Columns: ProductLineCode, ProductLineName
-
-Description: Categorizes products
-
-Relationship: One-to-Many (with Products)
+- Columns: ProductLineCode, ProductLineName
+  
+- Description: Categorizes products
+  
+- Relationship: One-to-Many (with Products)
 
 Offices
 
-Columns: OfficeNumber, City, State, Address
-
-Description: Corporate and administrative locations
-
-Relationship: One-to-Many (with Employees)
+- Columns: OfficeNumber, City, State, Address
+  
+- Description: Corporate and administrative locations
+  
+- Relationship: One-to-Many (with Employees)
 
 Payments
 
-Columns: CustomerID, PaymentDate, Amount
-
-Description: Tracks customer payment activity
-
-Relationship: Many-to-One (with Customers)
+- Columns: CustomerID, PaymentDate, Amount
+  
+- Description: Tracks customer payment activity
+  
+- Relationship: Many-to-One (with Customers)
