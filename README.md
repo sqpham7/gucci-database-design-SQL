@@ -11,3 +11,7 @@ The database is designed to create a logical and connected data structure across
 • Analyze customer purchasing behavior
 
 • Maintain consistency between online and in-store transactions
+
+##
+After forward engineering the databases into MySQL, 5 associative tables were created to connect the tables with a many-to-many relationship. This will allow us  to make joint queries between these tables and connect the data between them. 
+
